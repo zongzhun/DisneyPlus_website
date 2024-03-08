@@ -32,7 +32,7 @@ $(document).ready(() => {
         }
     })
 
-    $('.movies-slide').owlCarousel({
+    $('.movies_slide').owlCarousel({
         item: 2,
         dots: false,
         nav: true,
@@ -50,4 +50,18 @@ $(document).ready(() => {
             }
         }
     })
+
+    // Dynamically set data-title attribute for each movie-item
+    $('.movie-item img').each(function() {
+        var imageAlt = $(this).attr('alt'); // Get the alt text of the image
+        $(this).closest('.movie-item').attr('data-title', imageAlt); // Set the data-title attribute to the alt text
+    })
+
+    $('#search').on("keyup", function(){
+        var value = $(this).val().toLowerCase();
+    
+        $(".movie-item").filter(function(){
+            $(this).toggle($(this).attr('data-title').toLowerCase().indexOf(value) > -1);
+        });
+    });
 })
