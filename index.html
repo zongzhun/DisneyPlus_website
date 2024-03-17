@@ -22,7 +22,7 @@
 
     <!-- navbar start -->
     <nav class="navbar">
-        <a href="javascript:void(0);" class="brand">
+        <a href="./index.html" class="brand">
             <h1>漫威電影與劇集 | Disney+</h1>
         </a>
         <ul class="navbar_links">
@@ -35,14 +35,15 @@
                 <div class="search">
                     <a href="javascript:void(0);">
                         <span class="search-icon material-symbols-outlined">搜尋</span>
-                        <input class="search_input" type="search" id="search" placeholder="Search">
                     </a>
                 </div>
             </li>
+            <input type="text" name="search" class="search_input" id="search" placeholder="請按片名、角色或類別搜尋">
         </ul>
     </nav>
     <!-- navbar end -->
-
+    
+    <div id="movies-list">
     <!-- Start section -->
     <div class="hero">
         <!-- Start Hero Slide -->
@@ -77,7 +78,7 @@
                                 在漫威影業的《洛基》中，善變的壞人洛基（湯姆希德斯頓飾）在《復仇者聯盟4：終局之戰》種種事件後的新劇集中繼續扮演惡作劇之神。由凱特赫倫導演，麥可沃爾德倫為首席編劇。
                             </div>
                             <div class="item_action top_down delay_6">
-                                <a href="Loki_movie.html" class="btn btn_hover">
+                                <a href="Loki_Movie.html" class="btn btn_hover">
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>播放</span>
                                 </a>
@@ -113,7 +114,7 @@
                                 漫威影業推出回聲女。故事述說主角瑪雅洛佩茲遭逢威爾遜菲斯克的犯罪帝國追殺。當她回到老家，必須面對自己的家族與家族遺緒。
                             </div>
                             <div class="item_action top_down delay_6">
-                                <a href="ECHO_movie.html" class="btn btn_hover">
+                                <a href="ECHO_Movie.html" class="btn btn_hover">
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>播放</span>
                                 </a>
@@ -149,7 +150,7 @@
                                 驚奇隊長卡蘿丹佛斯因任務來到與克里人革命軍相連的異常蟲洞，能力卻因此發生糾纏，連結了視她為偶像的驚奇少女卡瑪拉克汗，以及她朋友的女兒，現為太空人的莫妮卡藍博上尉。三人必須結成「The Marvels」，拯救宇宙。
                             </div>
                             <div class="item_action top_down delay_6">
-                                <a href="Captain Marvel.html" class="btn btn_hover">
+                                <a href="Captain_Marvel.html" class="btn btn_hover">
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>播放</span>
                                 </a>
@@ -185,7 +186,7 @@
                                 觀察者繼續引領我們穿越浩瀚的多重宇宙，介紹漫威電影宇宙全新及熟悉的面孔。這一系列動畫單元劇質疑、重溫與改編經典的漫威電影時刻，優異的配音陣容當中包括許多閃耀巨星，再度詮釋他們的代表性角色。
                             </div>
                             <div class="item_action top_down delay_6">
-                                <a href="whatif.html" class="btn btn_hover">
+                                <a href="What_If.html" class="btn btn_hover">
                                     <i class="bx bxs-right-arrow"></i>
                                     <span>播放</span>
                                 </a>
@@ -342,22 +343,22 @@
                 角色精選系列
             </div>
             <div class="movies_slide carousel_nav_center owl-carousel">
-                <a href="Loki_movie.html" class="movie_item" data-title="洛基">
+                <a href="Loki_Movie.html" class="movie_item" data-title="洛基">
                     <img src="./images/character/洛基精選系列.jpg" alt="洛基">
                 </a>
-                <a href="Loki_movie.html" class="movie_item" data-title="黑豹精選系列">
+                <a href="Loki_Movie.html" class="movie_item" data-title="黑豹精選系列">
                     <img src="./images/character/黑豹精選系列.jpg" alt="黑豹精選系列">
                 </a>
-                <a href="Loki_movie.html" class="movie_item" data-title="蟻人">
+                <a href="Loki_Movie.html" class="movie_item" data-title="蟻人">
                     <img src="./images/character/蟻人精選系列.jpg" alt="蟻人">
                 </a>
-                <a href="Loki_movie.html" class="movie_item" data-title="綠巨人">
+                <a href="Loki_Movie.html" class="movie_item" data-title="綠巨人">
                     <img src="./images/character/綠巨人精選系列.jpg" alt="綠巨人">
                 </a>
-                <a href="Loki_movie.html" class="movie_item" data-title="奇異博士">
+                <a href="Loki_Movie.html" class="movie_item" data-title="奇異博士">
                     <img src="./images/character/奇異博士精選系列.jpg" alt="奇異博士">
                 </a>
-                <a href="Loki_movie.html" class="movie_item" data-title="蜘蛛人">
+                <a href="Loki_Movie.html" class="movie_item" data-title="蜘蛛人">
                     <img src="./images/character/蜘蛛人精選系列.jpg" alt="蜘蛛人">
                 </a>
             </div>
@@ -366,7 +367,7 @@
     <!-- End 角色精選系列區 -->
 
     <!-- Start 多重宇宙傳奇區 -->
-    <div class="character_section" id="search-value">
+    <div class="character_section">
         <div class="container">
             <div class="section_header">
                 漫威電影宇宙:多重宇宙傳奇
@@ -379,7 +380,7 @@
                     <img src="./images/The Multiverse Saga/獵鷹與酷寒戰士.png" alt="獵鷹與酷寒戰士">
                 </a>
                 <a href="WandaVision.html" class="movie_item" data-title="洛基">
-                    <img src="./images/slider_2.PNG" alt="洛基">
+                    <img src="./images/slider_2.PNG" alt="洛基" id="search-value">
                 </a>
                 <a href="WandaVision.html" class="movie_item" data-title="黑寡婦">
                     <img src="./images/The Multiverse Saga/黑寡婦.PNG" alt="黑寡婦">
@@ -405,7 +406,7 @@
     <!-- End 多重宇宙傳奇區 -->
 
     <!-- Start 蜘蛛宇宙區 -->
-    <div class="character_section" id="search-value">
+    <div class="character_section">
         <div class="container">
             <div class="section_header">
                 蜘蛛宇宙
@@ -442,6 +443,8 @@
         </div>
     </div>
     <!-- End 蜘蛛宇宙區 -->
+
+    </div>
 
     <!-- Start Footer section -->
     <footer class="footer_section">
